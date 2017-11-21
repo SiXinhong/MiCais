@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>875</width>
+    <height>456</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>变形迷彩三维渲染软件</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>875</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_keyshot"/>
+    <addaction name="action_read_png"/>
+    <addaction name="action_write_png"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="action_setSize"/>
+    <addaction name="action_set_grid"/>
+    <addaction name="action_add_rule"/>
+    <addaction name="action_set_color"/>
+    <addaction name="action_set_type"/>
+    <addaction name="action_create"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_keyshot"/>
+   <addaction name="action_read_png"/>
+   <addaction name="action_write_png"/>
+   <addaction name="action_set_grid"/>
+   <addaction name="action_setSize"/>
+   <addaction name="action_set_type"/>
+   <addaction name="action_set_color"/>
+   <addaction name="action_create"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="dockWidget">
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_3">
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_3"/>
+  </widget>
+  <action name="action_keyshot">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/keyshot.jfif</normaloff>icon/keyshot.jfif</iconset>
+   </property>
+   <property name="text">
+    <string>打开keyshot</string>
+   </property>
+  </action>
+  <action name="action_read_png">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/openobj.png</normaloff>icon/openobj.png</iconset>
+   </property>
+   <property name="text">
+    <string>导入视图</string>
+   </property>
+  </action>
+  <action name="action_write_png">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/savepic.png</normaloff>icon/savepic.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存工程图</string>
+   </property>
+  </action>
+  <action name="action_set_grid">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/m.png</normaloff>icon/m.png</iconset>
+   </property>
+   <property name="text">
+    <string>单位网格尺寸</string>
+   </property>
+  </action>
+  <action name="action_setSize">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/cube.png</normaloff>icon/cube.png</iconset>
+   </property>
+   <property name="text">
+    <string>模型尺寸</string>
+   </property>
+  </action>
+  <action name="action_add_rule">
+   <property name="text">
+    <string>添加标尺</string>
+   </property>
+  </action>
+  <action name="action_set_color">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/mycolor.png</normaloff>icon/mycolor.png</iconset>
+   </property>
+   <property name="text">
+    <string>设置颜色</string>
+   </property>
+  </action>
+  <action name="action_set_type">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/5.png</normaloff>icon/5.png</iconset>
+   </property>
+   <property name="text">
+    <string>设置图纸类型</string>
+   </property>
+  </action>
+  <action name="action_create">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/run.jfif</normaloff>icon/run.jfif</iconset>
+   </property>
+   <property name="text">
+    <string>制作工程图</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

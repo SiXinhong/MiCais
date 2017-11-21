@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>752</width>
+    <height>481</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>变形迷彩工程图融合系统</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>752</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_read_dfx"/>
+    <addaction name="action_read_micai"/>
+    <addaction name="action_write_dfx"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="action_amalgamation"/>
+    <addaction name="action"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_read_dfx"/>
+   <addaction name="action_read_micai"/>
+   <addaction name="action_write_dfx"/>
+   <addaction name="action_amalgamation"/>
+   <addaction name="action"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="dockWidget">
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_2">
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2"/>
+  </widget>
+  <action name="action_read_dfx">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/cad.png</normaloff>icon/cad.png</iconset>
+   </property>
+   <property name="text">
+    <string>导入图纸</string>
+   </property>
+  </action>
+  <action name="action_read_micai">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/MICAI.PNG</normaloff>icon/MICAI.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>导入迷彩</string>
+   </property>
+  </action>
+  <action name="action_write_dfx">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/savepic.png</normaloff>icon/savepic.png</iconset>
+   </property>
+   <property name="text">
+    <string>导出图纸</string>
+   </property>
+  </action>
+  <action name="action_amalgamation">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/changeBack.png</normaloff>icon/changeBack.png</iconset>
+   </property>
+   <property name="text">
+    <string>融合</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/empty.png</normaloff>icon/empty.png</iconset>
+   </property>
+   <property name="text">
+    <string>清除迷彩</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
