@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     widget=new Form(this);
 
     widget->setGeometry(0,50,width()-260,height()-60);
+
     widget->show();
 }
 
@@ -25,3 +26,5 @@ void MainWindow::paintEvent(QPaintEvent *)
     widget->setGeometry(0,50,width()-260,height()-60);
     widget->update();
 }
+
+

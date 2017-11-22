@@ -5,6 +5,7 @@
 #include <QPainter>
 #include <algorithm>
 #include<iostream>
+#include <QWheelEvent>
 using namespace std;
 
 namespace Ui {
@@ -20,9 +21,15 @@ public:
     ~Form();
 protected:
     void paintEvent(QPaintEvent *);
+    void wheelEvent(QWheelEvent *event);
 private:
     Ui::Form *ui;
     int gridsize;
+    double grid;
+    int centerX;
+    int centerY;
+    int o;
+    bool f;
     void updateGridSize();
 };
 

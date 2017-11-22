@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'form.ui'
 **
-** Created: Tue Nov 21 17:34:39 2017
+** Created: Tue Nov 21 20:25:34 2017
 **      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -27,7 +27,8 @@ public:
     {
         if (Form->objectName().isEmpty())
             Form->setObjectName(QString::fromUtf8("Form"));
-        Form->resize(400, 300);
+        Form->resize(2151, 1127);
+        Form->setContextMenuPolicy(Qt::ActionsContextMenu);
 
         retranslateUi(Form);
 

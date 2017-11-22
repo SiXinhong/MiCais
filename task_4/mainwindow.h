@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include<form.h>
+#include<QWheelEvent>
 
 namespace Ui {
 class MainWindow;
