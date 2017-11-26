@@ -13,8 +13,14 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    form.cpp \
+    typedialog.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    form.h \
+    typedialog.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    form.ui \
+    typedialog.ui
